@@ -6,9 +6,9 @@ int main(){
     expr();
 
     if(simbolo_lido == FIM){
-        printf("Expressão válida");
+        printf("Expressao valida");
     } else {
-        erro("símbolo inesperado");
+        erro("simbolo inesperado");
     }
 
     return 0;

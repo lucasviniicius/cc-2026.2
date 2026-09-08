@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "analisador.h"
 
 int simbolo_lido;
 int posicao = 0;
 int tokens[] = {
-    IDENT,
     MAIS,
-    NUMERO,
+    IDENT,
     FIM
 };
 
