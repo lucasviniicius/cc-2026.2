@@ -8,11 +8,14 @@
 #define FIM 8
 
 extern int simbolo_lido;
+extern char entrada[256];
+extern int posicao;
 
+void nome_token(int token, char saida[]);
+int proximo_token();
 void obtenha_simbolo();
 void erro(const char *mensagem);
 void expr();
 void termo();
 void fator();
 void primario();
-void nome_token(int token, char saida[]);
