@@ -1,0 +1,60 @@
+#ifndef TOKEN_H
+#define TOKEN_H
+
+typedef enum {
+    TOKEN_EOF,
+    TOKEN_ERRO,
+    TOKEN_IDENTIFICADOR,
+
+    TOKEN_PROGRAM,
+    TOKEN_IF,
+    TOKEN_THEN,
+    TOKEN_ELSE,
+    TOKEN_WHILE,
+    TOKEN_DO,
+    TOKEN_REPEAT,
+    TOKEN_UNTIL,
+    TOKEN_INTEGER,
+    TOKEN_REAL,
+    TOKEN_CHAR,
+    TOKEN_BEGIN,
+    TOKEN_END,
+    TOKEN_WRITE,
+    TOKEN_VAR,
+
+    TOKEN_DIV,
+    TOKEN_AND,
+    TOKEN_OR,
+    TOKEN_NOT,
+    TOKEN_MAIS,
+    TOKEN_MENOS,
+    TOKEN_MULT,
+    TOKEN_DIV_REAL,
+    TOKEN_MENOR,
+    TOKEN_MAIOR,
+    TOKEN_IGUAL,
+    TOKEN_MENOR_IGUAL,
+    TOKEN_MAIOR_IGUAL,
+    TOKEN_DIFERENTE,
+    TOKEN_ATRIBUICAO,
+
+    TOKEN_ABRE_PAR,
+    TOKEN_FECHA_PAR,
+    TOKEN_VIRGULA,
+    TOKEN_PONTO_VIRGULA,
+    TOKEN_PONTO,
+    TOKEN_DOIS_PONTOS,
+
+    TOKEN_LIT_INTEIRO,
+    TOKEN_LIT_REAL,
+    TOKEN_LIT_CHAR
+} TipoToken;
+
+typedef struct Token {
+    TipoToken tipo;
+    char lexema[256];
+    int linha;
+    int coluna;
+} Token;
+
+#endif
